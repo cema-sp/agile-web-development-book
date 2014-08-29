@@ -11,3 +11,14 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+jasmine:
+  title: Jasmine Oolong Tea
+  description: This most precious of green oolong teas
+    is made more delicate with the gentle
+    scenting of fragrantly sweet jasmine.
+    Creating a hint of perfumed wonder, this
+    sublime and aromatic hand-rolled tea is 
+    nothing less than a cup of transcendental
+    bliss.
+  image_url: jasmine.jpeg
+  price: 12.98
