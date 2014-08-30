@@ -17,7 +17,7 @@ Product.create(title: 'Jasmine Oolong Tea',
 					nothing less than a cup of transcendental 
 					bliss. 
 					},
-				image_url: 'jasmine.jpeg',
+				image_url: 'tea/jasmine.JPG',
 				price: 12.98)
 Product.create(title: 'Four Seasons Oolong Tea',
 				description: %{
@@ -31,7 +31,7 @@ Product.create(title: 'Four Seasons Oolong Tea',
 					buttery finish, you will enjoy the delicious 
 					taste day or night. 
 					},
-				image_url: 'fours.jpeg',
+				image_url: 'tea/fours.JPG',
 				price: 17.98)
 Product.create(title: 'Toasted Nut Brulee Oolong Tea',
 				description: %{
@@ -41,5 +41,5 @@ Product.create(title: 'Toasted Nut Brulee Oolong Tea',
 					tea aims to capture a sweet, sovereign dessert 
 					bursting with coconut, cinnamon and caramel. 
 					},
-				image_url: 'toasted.jpeg',
+				image_url: 'tea/toasted.JPG',
 				price: 7.98)
