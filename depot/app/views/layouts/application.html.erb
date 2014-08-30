@@ -22,6 +22,9 @@
 			<div class="time">
 				<%= sanitize(Time.now.strftime("%d.%m.%Y<br/>%H:%M")) %>
 			</div>
+			<div class="counter">
+				You are here for <%= @session_counter.to_i.ordinalize %> time.
+			</div>
 		</div>
 		<div id="main">
 			<%= yield %>
