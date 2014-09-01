@@ -13,6 +13,9 @@
 	</div>
 	<div id="columns">
 		<div id="side">
+			<div id="cart">
+				<%= render @cart %>
+			</div>
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/">Questions</a></li>
@@ -22,6 +25,7 @@
 			<div class="time">
 				<%= sanitize(Time.now.strftime("%d.%m.%Y<br/>%H:%M")) %>
 			</div>
+			<br/>
 			<div class="counter">
 				You are here for <%= @session_counter.to_i.ordinalize %> time.
 			</div>
