@@ -2,7 +2,8 @@ require 'test_helper'
 
 class CartsControllerTest < ActionController::TestCase
   setup do
-    @cart = carts(:one)
+    @cart = carts(:jasmine_2_fours_1)
+    session[:cart_id] = @cart.id
   end
 
   test "should get index" do
@@ -27,6 +28,15 @@ class CartsControllerTest < ActionController::TestCase
   test "should show cart" do
     get :show, id: @cart
     assert_response :success
+    assert_not_nil assigns(:cart)
+    assert_equal @cart, assigns(:cart)
+    assert_select '#main table .item_price', 2
+  end
+
+  test "should show delete buttons for each line item" do
+    get :show, id: @cart
+    assert_response :success
+    assert_select '#main table .item_controls input[value=delete]', 2
   end
 
   test "should get edit" do

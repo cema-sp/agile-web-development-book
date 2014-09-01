@@ -7,3 +7,14 @@ one:
 two:
   product_id: 1
   cart_id: 1
+
+jasmine_2_fours_1_1:
+  product: jasmine
+  cart: jasmine_2_fours_1
+  price: 10
+  quantity: 2
+jasmine_2_fours_1_2:
+  product: fours
+  cart: jasmine_2_fours_1
+  price: 10
+  quantity: 1
