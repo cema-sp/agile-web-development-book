@@ -1,0 +1,8 @@
+<% if @cart && @cart.line_items.size != 0 %>
+	$('#cart').html("<%= j render @cart %>");
+<% else %>
+	$('#cart').hide('blind',2000);
+<% end %>
+
+$('#current_item').css({'background-color':'#88ff88'}).
+	animate({'background-color':'#114411'}, 1000);

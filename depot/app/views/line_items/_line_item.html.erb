@@ -11,8 +11,9 @@
 	</td>
 	<td>
 		<div class="item_controls">
-			<%= button_to 'Delete', line_item, 
-				method: :delete,  
+			<%= button_to 'X', line_item, 
+				method: :delete, 
+				remote: true, 
 				confirm: "Delete #{line_item.product.title} from cart?" %>
 		</div>
 	</td>

@@ -22,7 +22,18 @@ class LineItemsControllerTest < ActionController::TestCase
       post :create, product_id: products(:one).id
     end
 
-    assert_redirected_to cart_path(assigns(:line_item).cart)
+    assert_redirected_to store_path # cart_path(assigns(:line_item).cart)
+  end
+
+    test "should create line_item via AJAX" do
+    assert_difference('LineItem.count') do
+      xhr :post, :create, product_id: products(:two).id
+    end
+
+    assert_response :success
+    assert_select_jquery :html, '#cart' do
+      assert_select 'tr#current_item td', /MyString2/
+    end
   end
 
   test "should not create new line_item" do
@@ -30,7 +41,7 @@ class LineItemsControllerTest < ActionController::TestCase
       post :create, product_id: products(:jasmine).id
     end
 
-    assert_redirected_to cart_path(assigns(:line_item).cart)
+    assert_redirected_to store_path # cart_path(assigns(:line_item).cart)
     assert_equal 3, assigns(:line_item).quantity
   end
 
@@ -55,6 +66,6 @@ class LineItemsControllerTest < ActionController::TestCase
     end
 
     # assert_redirected_to line_items_path
-    assert_redirected_to cart_path(assigns(:line_item).cart)
+    assert_redirected_to store_path # cart_path(assigns(:line_item).cart)
   end
 end

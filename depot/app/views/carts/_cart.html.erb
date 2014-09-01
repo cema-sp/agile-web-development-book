@@ -10,8 +10,9 @@
 				<%= number_to_currency(cart.total_price) %>
 			</td>
 			<td>
-				<%= button_to 'Empty cart', cart, 
+				<%= button_to 'X', cart, 
 					method: :delete, 
+					remote: true, 
 					confirm: 'Delete all items?' %>
 			</td>
 		</tr>

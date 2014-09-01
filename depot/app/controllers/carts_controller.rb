@@ -12,7 +12,7 @@ class CartsController < ApplicationController
   def show
     begin
       set_cart
-    rescue ActiveRecord::RecordNotFound => e
+    rescue ActiveRecord::RecordNotFound
       logger.error "Trying to access unexisting cart #{params[:id]}"
       redirect_to store_url, notice: 'Unexisting cart'
     else
@@ -68,7 +68,8 @@ class CartsController < ApplicationController
     @cart.destroy
     session[:cart_id] = nil
     respond_to do |format|
-      format.html { redirect_to store_url, notice: 'Now your cart is empty!' }
+      format.html { redirect_to store_url }
+      format.js
       format.json { head :no_content }
     end
   end

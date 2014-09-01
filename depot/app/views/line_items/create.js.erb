@@ -1,6 +1,6 @@
 $('#cart').html("<%= j render @cart %>");
 
-<% if @cart.line_items.size == 1 %>
+<% if (@cart.line_items.size == 1) && (@cart.line_items.first.quantity == 1) %>
 	$('#cart').hide();
 	$('#cart').show('blind', 2000);
 <% end %>

@@ -13,4 +13,10 @@
 		font-weight: bold;
 		border-top: 1px solid #595;
 	}
+	input[type=submit] {
+		font-weight: normal;
+	}
+	.total_line input[type=submit] {
+		font-weight: bold;
+	}
 }

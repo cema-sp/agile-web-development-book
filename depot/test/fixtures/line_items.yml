@@ -5,7 +5,7 @@ one:
   cart_id: 1
 
 two:
-  product_id: 1
+  product: two
   cart_id: 1
 
 jasmine_2_fours_1_1:
