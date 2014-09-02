@@ -13,8 +13,10 @@ jasmine_2_fours_1_1:
   cart: jasmine_2_fours_1
   price: 10
   quantity: 2
+  order: daves_order
 jasmine_2_fours_1_2:
   product: fours
   cart: jasmine_2_fours_1
   price: 10
   quantity: 1
+  order: daves_order

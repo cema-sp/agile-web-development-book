@@ -61,6 +61,8 @@ class LineItemsControllerTest < ActionController::TestCase
   end
 
   test "should destroy line_item" do
+    @line_item = line_items(:jasmine_2_fours_1_2)
+    session[:cart_id] = @line_item.cart.id
     assert_difference('LineItem.count', -1) do
       delete :destroy, id: @line_item
     end
