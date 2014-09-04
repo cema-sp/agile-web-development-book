@@ -27,7 +27,7 @@ class OrdersControllerTest < ActionController::TestCase
 
   test "should create order" do
     assert_difference('Order.count') do
-      post :create, order: { address: @order.address, email: @order.email, name: @order.name, pay_type: @order.pay_type }
+      post :create, order: { address: @order.address, email: @order.email, name: @order.name, pay_type_id: pay_types(:card).id }
     end
 
     assert_redirected_to store_path # order_path(assigns(:order))
@@ -39,6 +39,13 @@ class OrdersControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
+    @cart = Cart.create
+    session[:cart_id] = @cart.id
+    @cart.line_items.create(product: products(:jasmine))
+
+    @payment_types = PayType.all.map do |pay_type| 
+        [pay_type.type, pay_type.id]
+    end
     get :edit, id: @order
     assert_response :success
   end

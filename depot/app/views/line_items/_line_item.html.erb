@@ -10,11 +10,14 @@
 		<%= number_to_currency(line_item.total_price) %>
 	</td>
 	<td>
+	<% unless line_item.nil? %>
 		<div class="item_controls">
 			<%= button_to 'X', line_item, 
 				method: :delete, 
 				remote: true, 
 				confirm: "Delete #{line_item.product.title} from cart?" %>
 		</div>
+	<% end %>
+		
 	</td>
 </tr>

@@ -1,5 +1,11 @@
-<h1>OrderNotifier#shipped</h1>
-
+<h3>Order from Cema's Tea Shop has been shipped</h3>
 <p>
-  <%= @greeting %>, find me in app/views/order_notifier/shipped.html.erb
+	This message ensures you that we have shipped your recent order.
 </p>
+<table>
+	<tr>
+		<th colspan="2">Count</th>
+		<th>Description</th>
+	</tr>
+	<%= render @order.line_items %>
+</table>

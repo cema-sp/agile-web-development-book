@@ -4,10 +4,10 @@ daves_order:
   name: Dave Thomas
   address: NY City
   email: dave@domain.com
-  pay_type: Check
+  pay_type: check
 
 two:
   name: MyString
   address: MyText
   email: MyString
-  pay_type: MyString
+  pay_type: check

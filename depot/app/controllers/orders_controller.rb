@@ -32,6 +32,8 @@ class OrdersController < ApplicationController
 
   # GET /orders/1/edit
   def edit
+    @cart = current_cart
+    payment_types
   end
 
   # POST /orders
