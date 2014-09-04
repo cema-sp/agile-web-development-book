@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
     # @orders = Order.all
     @orders = Order.order('created_at asc').paginate(page: params[:page], 
                               per_page: 10)
+
     respond_to do |format|
       format.html
       format.json { render json: @orders }
@@ -25,7 +26,8 @@ class OrdersController < ApplicationController
       redirect_to store_url, notice: 'Your cart is empty'
       return
     end
-    @order = Order.new
+    @order ||= Order.new
+    payment_types
   end
 
   # GET /orders/1/edit
@@ -35,7 +37,18 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
+    pay_type = PayType.find(order_params[:pay_type_id]) rescue nil
+    unless pay_type
+      @order = Order.new(order_params)
+      @order.valid?
+      payment_types
+      render :new
+      return
+    end
+
+
+    @order = pay_type.orders.build(order_params)
+    # @order = Order.new(order_params)
     @order.add_line_items_from_cart(current_cart)
     # @cart = current_cart
 
@@ -43,11 +56,13 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
+        OrderNotifier.received(@order).deliver
 
         format.html { redirect_to store_url, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else
         @cart = current_cart
+        payment_types
         format.html { render :new }
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
@@ -86,6 +101,12 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:name, :address, :email, :pay_type)
+      params.require(:order).permit(:name, :address, :email, :pay_type_id)
+    end
+
+    def payment_types
+      @payment_types = PayType.all.map do |pay_type| 
+        [pay_type.type, pay_type.id]
+      end
     end
 end

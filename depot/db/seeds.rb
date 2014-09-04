@@ -43,3 +43,9 @@ Product.create(title: 'Toasted Nut Brulee Oolong Tea',
 					},
 				image_url: 'tea/toasted.JPG',
 				price: 7.98)
+
+PayType.delete_all
+
+PayType.create(type: 'Check')
+PayType.create(type: 'Credit card')
+PayType.create(type: 'Purchase order')
