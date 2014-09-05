@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+cema:
+  name: Cema
+  password_digest: <%= BCrypt::Password.create('pass') %>
+
+dave:
+  name: Dave
+  password_digest: <%= BCrypt::Password.create('pass') %>

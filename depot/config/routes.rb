@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+
   resources :orders do
     get :ship, on: :member
   end
