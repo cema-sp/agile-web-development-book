@@ -1,5 +1,9 @@
 <h1>Listing orders</h1>
 
+<% unless flash.empty? %>
+  <%= content_tag :p, notice, id: 'notice' %>
+<% end %>
+
 <table>
   <thead>
     <tr>
@@ -21,6 +25,7 @@
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Ship', [:ship, order], method: :get, data: { confirm: 'Ship it?' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :orders
+  resources :orders do
+    get :ship, on: :member
+  end
 
   resources :line_items
 

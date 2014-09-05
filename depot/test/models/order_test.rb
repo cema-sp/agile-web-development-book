@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class OrderTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+	test "should have ship_time field" do
+		order = Order.new
+		assert order.has_attribute?(:ship_date)
+	end
 end

@@ -17,6 +17,11 @@ class OrdersControllerTest < ActionController::TestCase
     assert_not_nil assigns(:orders)
   end
 
+  test "should show \"ship\" buttons on index page" do
+    get :index
+    assert_select "td input[type=submit][value=Ship]", minimum: 1
+  end
+
   test "should get new" do
     cart = Cart.create
     session[:cart_id] = cart.id
@@ -61,5 +66,11 @@ class OrdersControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to orders_path
+  end
+
+  test "should ship order" do
+    get :ship, id: @order
+    assert_redirected_to orders_path
+    assert_not_nil assigns(:order)[:ship_date]
   end
 end

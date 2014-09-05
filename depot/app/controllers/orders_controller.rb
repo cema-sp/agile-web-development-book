@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :destroy, :ship]
 
   # GET /orders
   # GET /orders.json
@@ -92,6 +92,17 @@ class OrdersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to orders_url, notice: 'Order was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def ship
+    respond_to do |format|
+      if @order.update({ship_date: Time.now}) #.save
+        OrderNotifier.shipped(@order).deliver
+        format.html { redirect_to orders_url, notice: 'Order was shipped successfully' }
+      else
+        format.html { redirect_to orders_url, notice: 'Order was not shipped! Something went wrong.' }
+      end
     end
   end
 
