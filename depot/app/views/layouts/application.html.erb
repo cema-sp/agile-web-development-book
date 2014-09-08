@@ -25,6 +25,16 @@
 				<li><a href="/">News</a></li>
 				<li><a href="/">Contact</a></li>
 			</ul>
+			
+			<% if session[:user_id] %>
+				<ul>
+					<li><%= link_to 'Orders', orders_path %></li>
+					<li><%= link_to 'Products', products_path %></li>
+					<li><%= link_to 'Users', users_path %></li>
+					<%= button_to 'Logout', logout_path, method: :delete %>
+				</ul>			
+			<% end %>
+
 			<div class="time">
 				<%= sanitize(Time.now.strftime("%d.%m.%Y<br/>%H:%M")) %>
 			</div>
