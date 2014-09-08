@@ -2,6 +2,15 @@ require 'test_helper'
 
 class OperatorStoriesTest < ActionDispatch::IntegrationTest
 	test "shipping order" do
+		# operator opens login page
+		get '/login'
+		assert_response :success
+		# operator enters login and password and presses submit
+		cema = users(:cema)
+		post_via_redirect '/login', name: cema[:name], password: 'pass'
+		assert_response :success
+		# and admin page opens
+		assert_template 'admin/index'
 		# operator opens orders view
 		get '/orders'
 		assert_response :success
