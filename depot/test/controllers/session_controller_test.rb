@@ -24,6 +24,14 @@ class SessionControllerTest < ActionController::TestCase
     assert_equal "Wrong credentials!", flash[:alert]
   end
 
+  test "should redirect to new user if no users in DB" do
+    logout  # logout current user (cema)
+    User.delete_all   # delete all users from DB
+
+    get :new
+    assert_redirected_to new_user_url
+  end
+
   test "should logout" do
     delete :destroy
     assert_redirected_to store_url

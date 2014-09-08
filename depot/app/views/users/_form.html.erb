@@ -12,12 +12,23 @@
       </div>
     <% end %>
 
+    <% if notice %>
+      <p id="notice"><%= notice %></p>
+    <% end %>
+
     <fieldset>
     <legend>User information</legend>
       <div class="field">
         <%= f.label :name %><br>
         <%= f.text_field :name, size: 40 %>
       </div>
+      <% unless action_name=='new' %>
+        <div class="field">
+          <%= f.label :old_password, 'Old pass' %><br>
+          <%= f.password_field :old_password, size: 40 %>
+        </div>
+      <% end %>
+      
       <div class="field">
         <%= f.label :password, 'Password' %><br>
         <%= f.password_field :password, size: 40 %>

@@ -2,6 +2,9 @@ class SessionController < ApplicationController
   skip_before_filter :authorize
 
   def new
+    if User.count.zero?
+      redirect_to new_user_url
+    end
   end
 
   def create

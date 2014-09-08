@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :authorize, only: [:new, :create], 
+    if: :no_users_in_db
 
   # GET /users
   # GET /users.json
@@ -41,13 +43,17 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to users_url, notice: "User #{@user.name} was successfully updated." }
-        format.json { render :show, status: :ok, location: @user }
+      if user = @user.authenticate(params[:user][:old_password])
+        if user.update(user_params)
+          format.html { redirect_to users_url, notice: "User #{@user.name} was successfully updated." }
+          format.json { render :show, status: :ok, location: @user }
+        else
+          format.html { flash[:notice] = 'Update failed'; render :edit }
+          format.json { render json: @user.errors, status: :unprocessable_entity }
+        end
       else
-        format.html { render :edit }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+        format.html { flash[:notice] = "Enter valid user password"; render :edit }
+      end      
     end
   end
 
@@ -76,5 +82,9 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:name, :password, :password_confirmation)
+    end
+
+    def no_users_in_db
+      User.count.zero?
     end
 end
