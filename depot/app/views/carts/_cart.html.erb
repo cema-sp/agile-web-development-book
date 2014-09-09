@@ -1,5 +1,5 @@
 <% unless cart.line_items.empty? %>
-	<div class="cart_title">Your Tea Cart</div>
+	<div class="cart_title"><%= t('.title') %></div>
 
 	<table>
 		<%= render(cart.line_items) %>
@@ -13,9 +13,9 @@
 				<%= button_to 'X', cart, 
 					method: :delete, 
 					remote: true, 
-					confirm: 'Delete all items?' %>
+					confirm: t('.confirm_delete') %>
 			</td>
 		</tr>
 	</table>
-	<%= button_to 'Checkout', new_order_path, method: :get %>
+	<%= button_to t('.checkout'), new_order_path, method: :get %>
 <% end %>

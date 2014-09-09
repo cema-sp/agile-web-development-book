@@ -20,4 +20,43 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title: "Cema's Shop"
+      home: "Home"
+      questions: "Questions"
+      news: "News"
+      contact: "Contact"
+      orders: "Orders"
+      products: "Products"
+      users: "Users"
+      logout: "Logout"
+      counter: "You are here for %{count} time."
+  store:
+    index:
+      catalog: "Your Tea Catalog"
+      add: "Add to Cart"
+  carts:
+    cart:
+      title: "Your Tea Cart"
+      confirm_delete: "Delete all items?"
+      checkout: "Checkout"
+  orders:
+    new:
+      details_title: "Please Enter Your Details"
+    form:
+      name: "Name"
+      address: "Address"
+      email: "Email"
+      pay_type: "Pay type"
+      pay_type_prompt: "Select a payment method"
+      submit: "Place Order"
+  order_succ_created: "Order was successfully created."
+  number:
+    currency:
+      format:
+        unit: "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"

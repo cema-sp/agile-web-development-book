@@ -1,0 +1,86 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ru:
+  layouts:
+    application:
+      title: "Магазин"
+      home: "Домой"
+      questions: "Вопросы"
+      news: "Новости"
+      contact: "Контакты"
+      orders: "Заказы"
+      products: "Продукты"
+      users: "Пользователи"
+      logout: "Выход"
+      counter: "Вы здесь %{count} раз."
+  store:
+    index:
+      catalog: "Каталог чая"
+      add: "В корзину"
+  carts:
+    cart:
+      title: "Ваша корзина"
+      confirm_delete: "Очистить корзину?"
+      checkout: "Оформить"
+  orders:
+    new:
+      details_title: "Пожалуйста, введите информацию"
+    form:
+      name: "Имя"
+      address: "Адрес"
+      email: "Email"
+      pay_type: "Тип оплаты"
+      pay_type_prompt: "Выберите тип оплаты"
+      submit: "Разместить заказ"
+
+  order_succ_created: "Ваш заказ сформирован"
+  Check: "Чек"
+  Credit card: "Кредитная карта"
+  Purchase order: "Накладная"
+
+  number:
+    currency:
+      format:
+        unit: "руб."
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%n&nbsp;%u"
+
+  errors:
+    template:
+      body: "Имеющиеся поблемы:"
+      header:
+        one: "В отправляемой форме для '%{model}' присутствует ошибка"
+        other: "Количество ошибок в данной форме для '%{model}' : %{count}"
+  activerecord:
+    errors:
+      messages:
+        blank: "- Поле не может быть пустым"
+    models:
+      order: "Заказ"
+    attributes:
+      order:
+        address: "Адрес"
+        name: "Имя"
+        email: "Email"
+        pay_type: "Тип оплаты"

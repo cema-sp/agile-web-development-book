@@ -6,8 +6,8 @@ class OrdersController < ApplicationController
   # GET /orders.json
   def index
     # @orders = Order.all
-    @orders = Order.order('created_at asc').paginate(page: params[:page], 
-                              per_page: 10)
+    @orders = Order.order('created_at asc').
+        paginate(page: params[:page], per_page: 10)
 
     respond_to do |format|
       format.html
@@ -61,7 +61,7 @@ class OrdersController < ApplicationController
         session[:cart_id] = nil
         OrderNotifier.received(@order).deliver
 
-        format.html { redirect_to store_url, notice: 'Order was successfully created.' }
+        format.html { redirect_to store_url, notice: I18n.t('.order_succ_created') }
         format.json { render :show, status: :created, location: @order }
       else
         @cart = current_cart
@@ -120,7 +120,7 @@ class OrdersController < ApplicationController
 
     def payment_types
       @payment_types = PayType.all.map do |pay_type| 
-        [pay_type.type, pay_type.id]
+        [I18n.t(pay_type.type), pay_type.id]
       end
     end
 end
