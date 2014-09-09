@@ -65,6 +65,6 @@ class OperatorStoriesTest < ActionDispatch::IntegrationTest
 		patch "/users/#{cema.id}", user: {name: 'Cema_', 
 			old_password: 'pass', password: 'pass_', 
 			password_confirmation: 'pass_'}
-		assert_redirected_to users_url
+		assert_redirected_to users_path(locale: :en)
 	end
 end
