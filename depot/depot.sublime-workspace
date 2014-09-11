@@ -423,9 +423,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 196.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
 			[
 				"open",
 				"View: Toggle Open Files in Side Bar"
@@ -527,7 +531,7 @@
 				"Snippet: Insert do |variable| … end"
 			]
 		],
-		"width": 400.0
+		"width": 480.0
 	},
 	"console":
 	{
@@ -550,6 +554,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/D/dists/precise/Release",
+		"/D/README.diskdefines",
+		"/C/s_pisarev/Private/Articles/.gitignore",
 		"/C/s_pisarev/Projects/awd/depot/config/database.yml",
 		"/C/s_pisarev/Projects/awd/depot/Gemfile",
 		"/C/s_pisarev/Projects/awd/.gitignore",
@@ -668,16 +681,7 @@
 		"/C/s_pisarev/Projects/awd/depot/app/models/product.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/controllers/products_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/line_items/create.js.erb",
-		"/C/s_pisarev/Projects/awd/depot/test/controllers/line_items_controller_test.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/assets/javascripts/application.js",
-		"/C/s_pisarev/Projects/awd/depot/app/assets/javascripts/carts.js.coffee",
-		"/C/s_pisarev/Projects/awd/depot/app/assets/stylesheets/carts.css.scss",
-		"/C/s_pisarev/Projects/awd/depot/test/controllers/products_controller_test.rb",
-		"/C/s_pisarev/Projects/awd/depot/test/controllers/carts_controller_test.rb",
-		"/C/s_pisarev/Projects/awd/depot/test/fixtures/carts.yml",
-		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140901082648_copy_prices_to_line_items.rb",
-		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140901064735_add_quantity_to_line_items.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/views/products/show.html.erb"
+		"/C/s_pisarev/Projects/awd/depot/test/controllers/line_items_controller_test.rb"
 	],
 	"find":
 	{
