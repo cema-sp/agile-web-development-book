@@ -29,6 +29,11 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
+  # Don't care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = false
+  # Configure ActionMailer [:smtp, :sendmail, :test]
+  config.action_mailer.delivery_method = :test
+
   # Generate digests for assets URLs.
   config.assets.digest = true
 
