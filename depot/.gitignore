@@ -18,6 +18,5 @@
 /.gemtags
 /.tags
 /.tags_sorted_by_file
-/Gemfile.lock
 /config/database.yml
 /config/secrets.yml
