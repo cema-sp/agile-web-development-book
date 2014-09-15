@@ -427,6 +427,66 @@
 		"selected_items":
 		[
 			[
+				"pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prevbr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prew",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prevb",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prev bro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prebro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prebr",
+				"Preferences: Browse Packages"
+			],
+			[
+				"prewbr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prevbro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"brow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"marlin",
+				"Snippet: Markdown_link_(mdl)"
+			],
+			[
+				"mark",
+				"Snippet: Markdown_header_(mdh1)"
+			],
+			[
+				"previbr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
 				"packin",
 				"Package Control: Install Package"
 			],
@@ -441,10 +501,6 @@
 			[
 				"pacc",
 				"Package Control: Remove Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: List Packages"
 			],
 			[
 				"titl",
@@ -531,7 +587,7 @@
 				"Snippet: Insert do |variable| … end"
 			]
 		],
-		"width": 480.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -554,18 +610,34 @@
 	},
 	"file_history":
 	[
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/s_pisarev/Private/Articles/Ubuntu-RVM-Ruby-Rails-Apache-Passenger.md",
+		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-MySQL.md",
+		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-Git-Capistrano.md",
+		"/C/s_pisarev/Projects/awd/depot/config/deploy.rb",
+		"/C/s_pisarev/Projects/awd/depot/config/deploy/staging.rb",
+		"/C/s_pisarev/Projects/awd/depot/config/deploy/production.rb",
+		"/C/s_pisarev/Projects/awd/depot/.gitignore",
+		"/C/s_pisarev/Projects/awd/depot/Capfile",
+		"/C/s_pisarev/Projects/awd/depot/Gemfile",
+		"/C/s_pisarev/Projects/awd/depot/config/secrets.yml",
+		"/C/s_pisarev/Projects/awd/depot/config/secrets.example.yml",
+		"/C/s_pisarev/Projects/awd/depot/config/database.example.yml",
+		"/C/Users/s_pisarev/.ssh/id_rsa.pub",
+		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-Capistrano.md",
+		"/C/s_pisarev/Projects/awd/depot/config/environments/development.rb",
+		"/C/s_pisarev/Projects/awd/depot/config/environments/production.rb",
+		"/C/s_pisarev/Projects/awd/depot/config/database.yml",
+		"/C/s_pisarev/Projects/awd/.gitignore",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/carts_controller.rb",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/README.md",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
 		"/D/dists/precise/Release",
 		"/D/README.diskdefines",
 		"/C/s_pisarev/Private/Articles/.gitignore",
-		"/C/s_pisarev/Projects/awd/depot/config/database.yml",
-		"/C/s_pisarev/Projects/awd/depot/Gemfile",
-		"/C/s_pisarev/Projects/awd/.gitignore",
 		"/C/s_pisarev/Projects/awd/.git/config",
 		"/C/Users/s_pisarev/.ssh/id_rsa_08_27.pub",
 		"/C/s_pisarev/RoR/RailsInstaller/Git/.ssh/known_hosts",
@@ -596,8 +668,6 @@
 		"/C/s_pisarev/Projects/awd/depot/vendor/assets/stylesheets/.keep",
 		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140904062850_set_pay_type_id_according_to_pay_type.rb",
 		"/C/s_pisarev/Projects/awd/depot/test/controllers/session_controller_test.rb",
-		"/C/s_pisarev/Projects/awd/depot/config/secrets.yml",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/carts_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/helpers/application_helper.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/orders/new.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/models/order.rb",
@@ -648,7 +718,6 @@
 		"/C/s_pisarev/Projects/awd/depot/app/views/orders/show.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/orders/index.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140905072201_remove_pay_type_from_order.rb",
-		"/C/s_pisarev/Projects/awd/depot/config/environments/development.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/helpers/order_notifier_helper.rb",
 		"/C/s_pisarev/Projects/awd/depot/test/controllers/orders_controller_test.rb",
 		"/C/s_pisarev/Projects/awd/depot/log/test.log",
@@ -668,20 +737,7 @@
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/.codeintel/config",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/README.rst",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/Default (Windows).sublime-mousemap",
-		"/C/s_pisarev/Projects/awd/depot/app/models/pay_type.rb",
-		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140901070342_combine_items_in_cart.rb",
-		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140904062436_add_pay_type_id_to_order.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/views/order_notifier/received.text.erb",
-		"/C/s_pisarev/Projects/awd/depot/README.rdoc",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Installed Packages/Package Control.sublime-package",
-		"/C/s_pisarev/Documents/РАР/этап 3/hp001.txt",
-		"/C/Software/Ruby200/lib/ruby/gems/2.0.0/gems/will_paginate-3.0.7/lib/will_paginate/active_record.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/models/product.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/products_controller.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/views/line_items/create.js.erb",
-		"/C/s_pisarev/Projects/awd/depot/test/controllers/line_items_controller_test.rb"
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap"
 	],
 	"find":
 	{
@@ -692,6 +748,8 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"<project>",
+			""
 		]
 	},
 	"find_state":
@@ -699,6 +757,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"RAILS_ENV\n```",
+			"\n```",
 			"      pay_type: \"Pay type\"\n",
 			"ntilde",
 			"html_safe",
@@ -788,6 +848,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 118.0
 	},
 	"output.unsaved_changes":
 	{
@@ -1029,11 +1093,11 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
