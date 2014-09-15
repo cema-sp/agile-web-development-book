@@ -25,7 +25,7 @@ set :deploy_to, '/opt/cap'
 # set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 
 # Default value for linked_dirs is []
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
@@ -54,6 +54,16 @@ namespace :deploy do
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
+    end
+  end
+
+  namespace :check do
+    before :linked_files, :copy_secret_files do
+      on roles(:all) do
+        %w[ config/database.yml config/secrets.yml ].each do |file|
+          upload! "#{file}","#{shared_path}/#{file}"
+        end
+      end
     end
   end
 

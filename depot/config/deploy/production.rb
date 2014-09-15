@@ -43,3 +43,5 @@ role :web, %w{user@192.168.109.130}
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
+set :bundle_flags, '--quiet'
