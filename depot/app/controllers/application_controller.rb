@@ -12,7 +12,21 @@ class ApplicationController < ActionController::Base
   protected
 
   def authorize
-    redirect_to(login_url, notice: 'Please, login first.') unless User.find_by_id(session[:user_id]) 
+    unless User.find_by_id(session[:user_id])
+      # respond_to do |format|
+      if request.format == Mime::HTML
+        # format.html { 
+          redirect_to(login_url, notice: 'Please, login first.') 
+        # }
+      else
+        # format.all do
+          authenticate_or_request_with_http_basic("Depot") do |login, password|
+            user = User.find_by_name(login)
+            user && user.authenticate(password)
+          end
+        # end
+      end
+    end
   end
 
   def set_i18n_locale_from_params
