@@ -5,7 +5,16 @@ class LineItemsController < ApplicationController
   # GET /line_items
   # GET /line_items.json
   def index
-    @line_items = LineItem.all
+    if params[:order_id]
+      @line_items = Order.find(params[:order_id]).line_items
+    else
+      @line_items = LineItem.all
+    end
+    respond_to do |format|
+      format.html
+      format.json { render json: @line_items }
+      format.xml { render xml: @line_items }
+    end
   end
 
   # GET /line_items/1
@@ -26,8 +35,14 @@ class LineItemsController < ApplicationController
   # POST /line_items.json
   def create
     @cart = current_cart
-    product = Product.find(params[:product_id])
-    @line_item = @cart.add_product(product.id)
+    if params[:line_item]
+      params[:line_item][:order_id] = params[:order_id]
+      @line_item = LineItem.new(params[:line_item])
+    else
+      product = Product.find(params[:product_id])
+      @line_item = @cart.add_product(product.id)
+    end
+
 
     respond_to do |format|
       if @line_item.save

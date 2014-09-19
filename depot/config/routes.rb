@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   scope '(:locale)' do
     resources :users
     resources :orders do
+      resources :line_items
       get :ship, on: :member
     end
     resources :line_items
