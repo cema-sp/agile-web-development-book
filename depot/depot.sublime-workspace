@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"li",
+				"line_items"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"Li",
+				"LineItem"
+			],
+			[
+				"if",
+				"ife	if … else … end"
+			],
+			[
+				"login",
+				"login_url"
+			],
+			[
+				"plat",
+				"platform"
+			],
+			[
 				"mar",
 				"margin"
 			],
@@ -52,10 +76,6 @@
 				"orders_url"
 			],
 			[
-				"li",
-				"line_items"
-			],
-			[
 				"orde",
 				"order"
 			],
@@ -85,10 +105,6 @@
 			],
 			[
 				"pay",
-				"pay_type"
-			],
-			[
-				"pa",
 				"pay_type"
 			],
 			[
@@ -431,6 +447,10 @@
 				"Markdown Preview: Preview in Browser"
 			],
 			[
+				"prew br",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
 				"prev",
 				"Markdown Preview: Preview in Browser"
 			],
@@ -587,7 +607,7 @@
 				"Snippet: Insert do |variable| … end"
 			]
 		],
-		"width": 512.0
+		"width": 480.0
 	},
 	"console":
 	{
@@ -610,27 +630,50 @@
 	},
 	"file_history":
 	[
+		"/C/s_pisarev/Projects/awd/depot/Gemfile",
+		"/C/s_pisarev/Projects/awd/depot/app/views/store/index.html.haml",
+		"/C/s_pisarev/Projects/awd/depot/app/views/store/index.html.erb",
+		"/C/s_pisarev/Projects/awd/depot/app/views/products/who_bought.atom.builder",
+		"/C/s_pisarev/Projects/awd/depot/.gemtags",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/line_items_controller.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/orders_controller.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/store_controller.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/carts_controller.rb",
+		"/C/s_pisarev/Projects/awd/depot/test/integration/operator_stories_test.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/mailers/order_notifier.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/views/orders/new.html.erb",
+		"/C/s_pisarev/Projects/awd/depot/config/routes.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/session_controller.rb",
+		"/C/s_pisarev/Projects/awd/depot/app/controllers/application_controller.rb",
+		"/C/Users/s_pisarev/Desktop/Сценарий перезапуска СМС01",
+		"/C/s_pisarev/Private/Documents/PregCourses/Readme_.html",
+		"/C/s_pisarev/Projects/awd/depot/db/development.sqlite3",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/s_pisarev/Private/Documents/PregCourses/Readme.md",
+		"/C/s_pisarev/Private/Documents/PregCourses/Readme.html",
+		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/s_pisarev/Projects/awd/depot/.gitignore",
+		"/C/s_pisarev/Projects/awd/depot/README.markdown",
+		"/C/Users/s_pisarev/.ssh/id_rsa.pub",
+		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-Git-Capistrano.md",
+		"/C/s_pisarev/Projects/awd/depot/Capfile",
+		"/C/s_pisarev/Projects/awd/depot/config/deploy/production.rb",
+		"/C/s_pisarev/Projects/awd/depot/config/deploy.rb",
+		"/C/s_pisarev/Projects/awd/depot/log.log",
+		"/C/s_pisarev/Projects/awd/depot/tmp.log",
 		"/C/s_pisarev/Private/Articles/Ubuntu-RVM-Ruby-Rails-Apache-Passenger.md",
 		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-MySQL.md",
-		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-Git-Capistrano.md",
-		"/C/s_pisarev/Projects/awd/depot/config/deploy.rb",
 		"/C/s_pisarev/Projects/awd/depot/config/deploy/staging.rb",
-		"/C/s_pisarev/Projects/awd/depot/config/deploy/production.rb",
-		"/C/s_pisarev/Projects/awd/depot/.gitignore",
-		"/C/s_pisarev/Projects/awd/depot/Capfile",
-		"/C/s_pisarev/Projects/awd/depot/Gemfile",
 		"/C/s_pisarev/Projects/awd/depot/config/secrets.yml",
 		"/C/s_pisarev/Projects/awd/depot/config/secrets.example.yml",
 		"/C/s_pisarev/Projects/awd/depot/config/database.example.yml",
-		"/C/Users/s_pisarev/.ssh/id_rsa.pub",
 		"/C/s_pisarev/Private/Articles/Ubuntu-Rails-Capistrano.md",
 		"/C/s_pisarev/Projects/awd/depot/config/environments/development.rb",
 		"/C/s_pisarev/Projects/awd/depot/config/environments/production.rb",
 		"/C/s_pisarev/Projects/awd/depot/config/database.yml",
 		"/C/s_pisarev/Projects/awd/.gitignore",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/carts_controller.rb",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/README.md",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
 		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
@@ -643,25 +686,16 @@
 		"/C/s_pisarev/RoR/RailsInstaller/Git/.ssh/known_hosts",
 		"/C/Users/s_pisarev/.ssh/id_rsa_08_27",
 		"/C/Users/s_pisarev/.ssh/known_hosts",
-		"/C/s_pisarev/Projects/awd/depot/test/integration/operator_stories_test.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/orders_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/orders/_form.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/config/locales/ru.yml",
-		"/C/s_pisarev/Projects/awd/depot/app/mailers/order_notifier.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/views/store/index.html.erb",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/store_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/config/locales/en.yml",
 		"/C/s_pisarev/Projects/awd/depot/Gemfile.lock",
 		"/C/s_pisarev/Projects/awd/depot/config/initializers/filter_parameter_logging.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/line_items_controller.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/session_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/order_notifier/shipped.text.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/carts/show.html.erb",
-		"/C/s_pisarev/Projects/awd/depot/app/views/products/who_bought.atom.builder",
 		"/C/s_pisarev/Projects/awd/depot/app/views/line_items/edit.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/admin/index.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/config/application.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/controllers/application_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/layouts/application.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/assets/stylesheets/application.css.scss",
 		"/C/s_pisarev/Projects/awd/depot/app/assets/stylesheets/admin.css.scss",
@@ -669,7 +703,6 @@
 		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140904062850_set_pay_type_id_according_to_pay_type.rb",
 		"/C/s_pisarev/Projects/awd/depot/test/controllers/session_controller_test.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/helpers/application_helper.rb",
-		"/C/s_pisarev/Projects/awd/depot/app/views/orders/new.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/models/order.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/models/user.rb",
 		"/C/s_pisarev/Projects/awd/depot/test/fixtures/orders.yml",
@@ -678,11 +711,9 @@
 		"/C/s_pisarev/Projects/awd/depot/test/mailers/order_notifier_test.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/carts/_cart.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/config/environment.rb",
-		"/C/s_pisarev/Projects/awd/depot/config/routes.rb",
 		"/C/s_pisarev/Projects/awd/depot/config/initializers/inflections.rb",
 		"/C/s_pisarev/Projects/awd/depot/lib/100_dummy_orders.rb",
 		"/C/s_pisarev/Projects/awd/depot/db/migrate/20140902131813_create_pay_types.rb",
-		"/C/Users/s_pisarev/Desktop/Сценарий перезапуска СМС01",
 		"/C/s_pisarev/Projects/awd/depot/app/views/users/_form.html.erb",
 		"/C/s_pisarev/Projects/awd/depot/app/controllers/users_controller.rb",
 		"/C/s_pisarev/Projects/awd/depot/app/views/users/index.html.erb",
@@ -726,18 +757,7 @@
 		"/C/s_pisarev/Projects/awd/depot/test/models/pay_type_test.rb",
 		"/C/s_pisarev/Projects/awd/depot/db/schema.rb",
 		"/C/s_pisarev/Projects/awd/depot/db/seeds.rb",
-		"/C/s_pisarev/Projects/awd/depot/depot.sublime-project",
-		"/C/s_pisarev/Projects/awd/depot/app/views/line_items/_line_item.html.erb",
-		"/C/s_pisarev/Projects/awd/depot/test/fixtures/products.yml",
-		"/C/s_pisarev/Projects/awd/depot/app/helpers/store_helper.rb",
-		"/C/s_pisarev/Projects/awd/depot/test/fixtures/line_items.yml",
-		"/C/s_pisarev/Projects/awd/depot/app/views/line_items/_line_item.text.erb",
-		"/C/s_pisarev/Projects/awd/depot/test/fixtures/pay_types.yml",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/.codeintel/config",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/README.rst",
-		"/C/Users/s_pisarev/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap"
+		"/C/s_pisarev/Projects/awd/depot/depot.sublime-project"
 	],
 	"find":
 	{
@@ -757,6 +777,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"session\n```",
 			"RAILS_ENV\n```",
 			"\n```",
 			"      pay_type: \"Pay type\"\n",
@@ -868,6 +889,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				".bu",
+				"app\\views\\products\\who_bought.atom.builder"
+			],
+			[
+				"con/licon",
+				"app\\controllers\\line_items_controller.rb"
+			],
 			[
 				"operst",
 				"test\\integration\\operator_stories_test.rb"
